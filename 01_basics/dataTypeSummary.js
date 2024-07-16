@@ -24,3 +24,28 @@ const myFn = function(){
 }
 
 
+// +++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Refrence/Non Primitive)
+
+let myName = "Bedant Chhetri"
+let anotherName = myName
+
+anotherName = "Zeno"
+
+console.log(myName);
+console.log(anotherName);
+
+
+
+let userOne = {
+    email : "bedant@gmail.com",
+    upiId : "userone@sbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "usertwo@gmail.com"
+
+console.log(userOne.email);// email of user one get changed as this is stored in heap memory and the refrence is passed
+console.log(userTwo.email);
