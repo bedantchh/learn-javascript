@@ -60,3 +60,20 @@ const {courseInstructor: teacher} = course
 
 // console.log(courseInstructor)
 console.log(teacher);
+
+
+// Example of JSON
+
+// {
+//     "name" : "Bedant",
+//     "email" : "bedant@gmail.com",
+//     "codesIn" : "JS"
+// }
+
+// JSON Can also be in arrays
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
