@@ -5,4 +5,4 @@
 
 ((name) => {
     console.log(`DB CONNECTED ${name}`)
-})("Yes!")
+})("Yes!") 
