@@ -16,4 +16,17 @@ for (const greet of greetings){
     greetingsNoSpace.push(greet)
     
 }
-console.log(greetingsNoSpace)
+// console.log(greetingsNoSpace)
+
+
+// Maps
+
+const map = new Map()
+map.set('IN',"INDIA")
+map.set('USA',"UNITED STATES OF AMERICA")
+
+// console.log(map);
+
+for (const [key , value] of map){
+    console.log(key, "-", value)
+}
