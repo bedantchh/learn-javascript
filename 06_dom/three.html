@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: orange;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // function addLang(newlang){
+    //     const li = document.createElement("li")
+    //     li.innerHTML = `${newlang}`
+    //     const addel = document.querySelector(".language")
+    //     addel.appendChild(li)
+    // }
+    
+    // addLang("c++")
+    // addLang("c++")s
+    // addLang("c++")
+
+    // Optimised way
+    function addOptimisedLang(newlang){
+        const li = document.createElement("li")
+        // const addText = document.createTextNode(newlang)
+        // li.appendChild(addText) 
+        li.appendChild(document.createTextNode(newlang))
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptimisedLang("python")
+    addOptimisedLang("c++")
+
+
+    //Edit
+    const secondlang =  document.querySelector("li:nth-child(2)")
+    const newEl = document.createElement("li")
+    newEl.textContent= "mojo"
+    secondlang.replaceWith(newEl)
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = "<li> hahahahahahahahah </li>"
+    
+
+    // Remove
+
+
+    const lastLang = document.querySelector("li:last-child")
+    console.log(lastLang);
+    lastLang.remove()
+    
+</script>
+</html>
