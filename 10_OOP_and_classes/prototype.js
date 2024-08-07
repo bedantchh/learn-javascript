@@ -20,3 +20,11 @@ Object.prototype.bedant = function() {
 }
 
 heroPower.bedant()
+// heroPower.heyBedant()
+
+
+Array.prototype.heyBedant = function(){
+    console.log("Bedant is present in all arrays!")
+}
+
+myHeros.heyBedant()
